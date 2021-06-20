@@ -5,7 +5,7 @@ name: Sync Fork
 # Controls when the action will run. 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/1 * * * *'
   workflow_dispatch:  # click the button on Github repo!
 
 
@@ -31,6 +31,7 @@ jobs:
         upstream_repository: abhishekr700/OnlineAuction
         upstream_branch: deploy
         target_branch: deploy
+        git_pull_args: --ff-only
 
     # Step 3: Display a message if 'sync' step had new commits (simple test)
     - name: Check for new commits
