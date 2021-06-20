@@ -18,5 +18,6 @@ jobs:
     steps:
       - uses: tgymnich/fork-sync@v1.4
         with:
+          owner: abhishekr700
           base: deploy
           head: deploy
